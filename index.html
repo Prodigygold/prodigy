@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Popular</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-          <a href="#">
-            <Button>SIGN UP</Button> 
-        </a>
-        <a href="#">
-            <Button>LOG IN</Button>
-        </div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div></div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="submit" class="btn btn-success">Search</button>
+        </form>
+        <a href="signIn.html">
+            <button type="signIn" class="btn btn-success">Sign In</button>
+        </a>
+        <a href="logIn.html">
+            <button type="logIn" class="btn btn-success">Log In</button>
+      </div>
+      <i class="fa fa-user-alt"></i>
+    </nav>
+    <div class="row" style="margin-top: 100px">
+      <div class="col-8">
+        <div class="card">
+          <img class="pic" src="./picture/FB.jpg" alt="Card image cap">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#"><i class=" fa fa-thumbs-up"></i></a>
+        </div>
+        <div class="card">
+          <img class="pic" src="./picture/FB.jpg" alt="Card image cap">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#"><i class="fa fa-thumbs-up"></i></a>
+        </div>
+        <div class="card">
+          <img class="pic" src="./picture/FB.jpg" alt="Card image cap">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#"><i class="fa fa-thumbs-up"></i></a>
+        </div>
+        <div class="card">
+          <img class="pic" src="./picture/FB.jpg" alt="Card image cap">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#"><i class="fa fa-thumbs-up"></i></a>
+        </div>
+      </div>
+  
+      <div class="col-4" style="position: fixed; right:0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><i><b>Ads</b></i></h5>
+            <img class="image" src="./picture/JOHN LOGO 3.jpg" alt="Card image cap">
+            <p class="card-text">For Your Catring Services, Contact Us</p>
+            <a href="#"><i class="fa fa-thumbs-up"></i></a>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i><b>Ads</b></i></h5>
+              <img class="image" src="./picture/FB.jpg" alt="Card image cap">
+              <p class="card-text">Your Animal Health is Our Ultimate Concern</p>
+              <a href="#"><i class="fa fa-thumbs-up"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>  
+  </div>
 </body>
 <script src="./js/jQuery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
 </html>
