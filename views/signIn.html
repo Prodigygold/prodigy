@@ -15,28 +15,28 @@
     <div class="container">
         <div class="login">
             <div class="jumbotron">
-                <form>
+                <form action="/submitForm" method="POST">
                     <img class="image" src="./picture/FB.jpg">
                     <div class="form-group">
                         <label for="exampleInputName" class="form">First Name</label>
-                        <input type="First Name" class="form-control" id="firstName" aria-describedby="emailHelp"
+                        <input type="First Name" name="firstName"class="form-control" id="firstName" aria-describedby="emailHelp"
                             placeholder="Enter First Name">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputName" class="form">Last Name</label>
+                        <label for="exampleInputName" name="lastName" class="form">Last Name</label>
                         <input type="last Name" class="form-control" id="lastName" placeholder="Last Name">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail" class="form">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="mail@eample.com">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder="mail@eample.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="form">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" name="password"class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="form">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                        <input type="password" name="confirmPassword" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
