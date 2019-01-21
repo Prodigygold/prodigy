@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prodigygold/prodigy.git"
+  },
+  "author": "Prodigy Ayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prodigygold/prodigy/issues"
+  },
+  "homepage": "https://github.com/Prodigygold/prodigy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  }
+}
