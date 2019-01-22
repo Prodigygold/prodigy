@@ -15,16 +15,25 @@ app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, "./public")))
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/login.html'))
-})
+app.set("views", path.join(__dirname, "views"))
+app.set("view engine", "ejs")
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'))
+    res.render("index", {
+        pageTitle: "Home"
+    })
+})
+
+app.get('/login', (req, res) => {
+    res.render("login", {
+        pageTitle: "Login"
+    })
 })
 
 app.get('/signIn', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/signIn.html'))
+    res.render("signIn", {
+        pageTitle: "Sign In"
+    })
 })
 
 app.post('/submitForm', (req, res) => {
