@@ -28,10 +28,14 @@
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">I Agree to the Terms and privacy</label>
+                        <% if(obj.errorMessage)
+                        { %> <p class="error"> <%= obj.errorMessage %> </p> <%
+                    }
+                    %>
                     </div>
                     <button type="submit" class="btn btn-success">Submit</button>
                 </form>
-                <p class="error">Error Message</p>
+                
             </div>
         </div>
     </div>

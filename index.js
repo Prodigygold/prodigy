@@ -32,16 +32,71 @@ app.get('/login', (req, res) => {
 
 app.get('/signIn', (req, res) => {
     res.render("signIn", {
-        pageTitle: "Sign In"
+        pageTitle: "Sign In",
+        obj: {}
     })
 })
 
 app.post('/submitForm', (req, res) => {
     let userObject = req.body
-    userArray.push(userObject)
-    console.log(userArray)
-    res.redirect('/')
+    let username = req.body.username
+    let password = req.body.password
+    let secondPassword = req.body.confirmPasswor
+
+    console.log(username)
+    console.log(userObject)
+    if (!password){
+        return res.render("signIn", {
+            pageTitle: "signIn",
+            obj : {
+                errorMessage: "Provide a Password"
+            }
+        })
+    }
+    if (secondPassword.length <6){
+        return res.render("signIn", {
+            pageTitle: "signIn",
+            obj : {
+                errorMessage: "Provide is too short"
+            }
+        })
+    }
+
+    if (!password){
+        return res.render("signIn", {
+            pageTitle: "signIn",
+            obj : {
+                errorMessage: "Provide a Password"
+            }
+        })
+    }
+    return res.render("signIn", {
+        pageTitle: "signIn",
+        obj: {
+            errorMessage: "work in progress"
+        }
+    })
+
+   let usernameArray = [] 
+console.log(usernameArray)
+if (usernameArray.indexOf(userObject.username) === -1) {
+    userArray.push(userobject)
+    return res.render("signIn", {
+        pageTitle: "signIn",
+        obj: {
+            errorMessage: "Successfully signed up"
+        }
+    })
+}
+
+return res.render ("signIn", {
+    pageTitle: "Sign Up",
+    obj: {
+        errorMessage: "username already exists"
+    }
 })
-app.listen(PORT, ( ) => {
-    console.log ("Hey Ya, Server is running")
+});
+
+app.listen(PORT, function(){
+    console.log("server is now running")
 })
